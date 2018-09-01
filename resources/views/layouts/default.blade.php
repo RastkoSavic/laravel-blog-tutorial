@@ -6,9 +6,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Non dynamic content">
 
-	<title>Non dynamic title</title>
+	<meta name="description" content="@yield('description')">
+
+	<title>@yield('title') - YourAppName</title>
 
 	<!-- Styles -->
 	<link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -22,8 +23,14 @@
 		@include('includes.navbar')
 
 		<!-- Hero -->
+		@include('includes.header')
 
 		<div class="container">
+
+			{{-- Dynamic Go Back Button --}}
+			<a href="{{ URL::previous() }}" class="btn btn-primary">
+				Go Back
+			</a>
 
 			<div class="row">
 
@@ -49,6 +56,7 @@
 	</div>
 
 	<!-- Footer -->
+	@include('includes.footer')
 
 	<!-- Scripts -->
 	<script src="{{ asset('js/app.js') }}"></script>

@@ -1,6 +1,12 @@
 @extends('layouts.default')
 {{-- Home Page --}}
 
+{{-- Title --}}
+@section('title', 'Home')
+
+{{-- Description --}} 
+@section('description', 'Hello, this is our brand new website!')
+
 @section('content')
 <br>
 <h2>Home</h2>

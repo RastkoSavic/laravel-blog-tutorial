@@ -10477,3 +10477,11 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+#app {
+  min-height: 1000px;
+}
+
+footer {
+  padding: 20px 0 5px 0;
+}
+
